@@ -8,7 +8,7 @@ const Website3 = () => {
     const fetchTransactions = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5002/api/get-transactions"
+          "https://trading-protocol-website3-backend.onrender.com/api/get-transactions"
         );
         setTransactions(response.data.transactions);
       } catch (error) {
